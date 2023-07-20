@@ -73,8 +73,21 @@ const database = {
       Diet: "Aliens",
     },
   ],
+
+  Tips: [
+    {
+      image:
+        "https://images.nightcafe.studio/jobs/uS6UVgWIWBHHiKNYEib1/uS6UVgWIWBHHiKNYEib1_2x.jpg?tr=w-1600,c-at_max",
+      cleaner: "Clean with windex",
+      watertemp: "Keep water at 80 degrees",
+      thoughts: "Best tank ever!",
+    },
+  ],
 };
 
 export const getFish = () => {
   return database.fish.map((fish) => ({ ...fish }));
+};
+export const getTips = () => {
+  return database.Tips.map((Tips) => ({ ...Tips }));
 };
