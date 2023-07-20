@@ -21,4 +21,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 20px 500px 50px;
+}
+.fishIMAGE {
+  width: 200px;
+  height: 200px;
 }
