@@ -77,10 +77,27 @@ const database = {
   Tips: [
     {
       image:
-        "https://images.nightcafe.studio/jobs/uS6UVgWIWBHHiKNYEib1/uS6UVgWIWBHHiKNYEib1_2x.jpg?tr=w-1600,c-at_max",
+        "https://reefs.com/blog/wp-content/uploads/2019/02/neptune-systems-trident-1.jpg",
       cleaner: "Clean with windex",
       watertemp: "Keep water at 80 degrees",
       thoughts: "Best tank ever!",
+    },
+  ],
+  Locations: [
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGLfYToRPmN2SDmELyYDIKrDFKxvkw08xtQ&usqp=CAU",
+      name: "Westborough",
+    },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNi85uV10fCM3PZHz3PCVFcJilaMnf2lPSvA&usqp=CAU",
+      name: "Highland Heights",
+    },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJzUPLRbfMtJrfWjvi2PaBCO_OxiTGOpkViC1K85pfKp_bSQCZZOAWjcG0D4bAX1IDHs&usqp=CAU",
+      name: "Aqua-dor",
     },
   ],
 };
@@ -90,4 +107,7 @@ export const getFish = () => {
 };
 export const getTips = () => {
   return database.Tips.map((Tips) => ({ ...Tips }));
+};
+export const getLocations = () => {
+  return database.Locations.map((Locations) => ({ ...Locations }));
 };
